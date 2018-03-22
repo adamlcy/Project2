@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+
+		<audio controls autoplay loop hidden="true">
+			<source src="music/bensound-creepy.mp3" type="audio/mp3">
+		</audio>
+		<link rel="stylesheet" href="scripts/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+		<title>Ghost House</title>
+
+	</head>
+	<body>
+	 
+		<div id="start_screen">
+			<div id="title">
+				<div><img id="ghost_icon" src="images/ghost_icon.jpg"/><strong class="title_element">HOUSE</strong>
+				</div>
+			</div>
+			
+			<div class="title_element" id="start_button">
+					Don't let the ghost catch you </br> Use the arrow key to move around.</br>
+						Collect as many coins as you can and stay in light. </br>Have fun. </br></br></br>
+					  <button onclick="displayMap()" >Start</button>
+			</div>
+			
+		</div>
+		
+		<div id="stage">
+			<div id="map"></div>
+			<p id="output"></p>
+		</div>
+		<div id="end_title"></div>
+		<script src="scripts/animation.js"></script>
+		<script src="scripts/game.js"></script>
+	</body>
+<!--MUSIC FROm https://www.bensound.com/royalty-free-music/track/creepy-->
+</html>

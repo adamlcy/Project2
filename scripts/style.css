@@ -1,0 +1,85 @@
+@font-face{
+	font-family: GhostFont;
+	src:url("../font/Nightbird.ttf");
+}
+
+body{
+	background-color: rgb(235,248,256);
+}
+
+button{
+	width:135px;
+	height:70px;
+	font-size: 15px;
+}
+
+#ghost_icon{
+	align:"left";
+	opacity: 0;
+}
+
+p{
+	font-family: "GhostFont";
+	color: white;
+	width:500px;
+	font-size: 20px;
+}
+ 
+#start_button{
+	font-family: "GhostFont";
+	text-align:center;
+	padding-top:15px;
+	opacity: 1;
+}
+
+#start_screen{
+	
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-55%,-50%);
+}
+
+#title{
+	font-family: "GhostFont";
+	font-size: 90px;
+	text-align:justify;
+	color: rgb(89,0,0);
+	padding-left:60px;
+}
+
+.title_element{
+	opacity: 1;
+}
+#stage{
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	display: none;
+	opacity:1;
+}
+#map{
+	width:512px;
+	height:512px;
+	background-image:url("../images/floor.jpg");
+}
+#end_title{
+	font-family: "GhostFont";
+	font-size: 90px;
+	color : white;
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-55%,-50%);
+	display:none;
+	opacity:0;
+}
+
+.cell{
+	display:block;
+	position: absolute;
+	width:64px;
+	height:64px;
+}
+
